@@ -1,0 +1,93 @@
+version: '3.8'
+
+services:
+  nexus-instance1:
+    build: .
+    environment:
+      - NEXUS_HOME=/root/.nexus_1
+    volumes:
+      - ./.nexus_1:/root/.nexus_1
+    restart: unless-stopped
+    command: /usr/local/bin/start.sh
+
+  nexus-instance2:
+    build: .
+    environment:
+      - NEXUS_HOME=/root/.nexus_2
+    volumes:
+      - ./.nexus_2:/root/.nexus_2
+    restart: unless-stopped
+    command: /usr/local/bin/start.sh
+
+  nexus-instance3:
+    build: .
+    environment:
+      - NEXUS_HOME=/root/.nexus_3
+    volumes:
+      - ./.nexus_3:/root/.nexus_3
+    restart: unless-stopped
+    command: /usr/local/bin/start.sh
+
+  nexus-instance4:
+    build: .
+    environment:
+      - NEXUS_HOME=/root/.nexus_4
+    volumes:
+      - ./.nexus_4:/root/.nexus_4
+    restart: unless-stopped
+    command: /usr/local/bin/start.sh
+
+  nexus-instance5:
+    build: .
+    environment:
+      - NEXUS_HOME=/root/.nexus_5
+    volumes:
+      - ./.nexus_5:/root/.nexus_5
+    restart: unless-stopped
+    command: /usr/local/bin/start.sh
+
+  nexus-instance6:
+    build: .
+    environment:
+      - NEXUS_HOME=/root/.nexus_6
+    volumes:
+      - ./.nexus_6:/root/.nexus_6
+    restart: unless-stopped
+    command: /usr/local/bin/start.sh
+
+  nexus-instance7:
+    build: .
+    environment:
+      - NEXUS_HOME=/root/.nexus_7
+    volumes:
+      - ./.nexus_7:/root/.nexus_7
+    restart: unless-stopped
+    command: /usr/local/bin/start.sh
+
+  nexus-instance8:
+    build: .
+    environment:
+      - NEXUS_HOME=/root/.nexus_8
+    volumes:
+      - ./.nexus_8:/root/.nexus_8
+    restart: unless-stopped
+    command: /usr/local/bin/start.sh
+
+  nexus-instance9:
+    build: .
+    environment:
+      - NEXUS_HOME=/root/.nexus_9
+    volumes:
+      - ./.nexus_9:/root/.nexus_9
+    restart: unless-stopped
+    command: /usr/local/bin/start.sh
+
+  nexus-instance10:
+    build: .
+    environment:
+      - NEXUS_HOME=/root/.nexus_10
+    volumes:
+      - ./.nexus_10:/root/.nexus_10
+    restart: unless-stopped
+    command: /usr/local/bin/start.sh
+
