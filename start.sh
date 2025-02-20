@@ -3,7 +3,7 @@
 run_program() {
     # Define variables for toption and node_id
     toption="2"
-    node_id="1048321"
+    node_id="8757527"
 
     # Start the program and capture its output
     output=$(cargo run -r -- start --env beta 2>&1 < /dev/null)
